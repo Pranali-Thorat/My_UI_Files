@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            width: 100%;
+            min-height: 100vh;
+            margin: auto;
+            display: grid;
+            grid-template-areas: "header header header"
+                                  "Hero  MainContent MainContent"
+                                  " Sidebar MainContent MainContent"
+                                  " Sidebar ExtraContent ExtraContent"
+                                  "RealatedImage RealatedImage Realtedpost"
+                                  "footer footer footer";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.3fr 1fr 1.5fr 0.8fr 1fr 0.3fr;
+            grid-gap: 10px;
+        }
+        .header
+        {
+            grid-area: header;
+            background-color: cornflowerblue;
+        }
+        .Hero
+        {
+            grid-area: Hero;
+            background-color: rgb(237, 100, 219);
+        }
+        .MainContent
+        {
+            grid-area: MainContent;
+            background-color: darkorange;
+        }
+        .Sidebar
+        {
+            grid-area: Sidebar;
+            background-color: green;
+        }
+        .ExtraContent
+        {
+            grid-area: ExtraContent;
+            background-color: blueviolet;
+        }
+        .RealatedImage
+        {
+            grid-area: RealatedImage;
+            background-color: rgb(226, 43, 156);
+        }
+        .Realtedpost
+        {
+            grid-area: Realtedpost;
+            background-color: rgb(43, 226, 49);
+        }
+        .footer
+        {
+            grid-area: footer;
+            background-color: rgb(43, 107, 226);
+        }
+        @media(max-width:612px)
+        {
+            .container
+            {
+                grid-template-areas: "header"
+                                       "Hero"
+                                       "MainContent"
+                                       "Sidebar"
+                                       "ExtraContent"
+                                       "RealatedImage"
+                                       "Realtedpost"
+                                       "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+              
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="Hero"></div>
+        <div class="MainContent"></div>
+        <div class="Sidebar"></div>
+        <div class="ExtraContent"></div>
+        <div class="RealatedImage"></div>
+        <div class="Realtedpost"></div>
+        <div class="footer"></div>
+
+    </div>
+</body>
+</html>

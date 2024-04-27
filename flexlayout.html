@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website using flex</title>
+    <link rel="stylesheet" href="CSS/flexlayout.css">
+    <link rel="stylesheet" href="F:\html\ism\css\my-slider.css">
+    <script src="F:\html\ism\js\ism-2.2.min.js"></script>
+    <style>
+*
+  {  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+body
+{
+     display: flex;
+     flex-direction: column;
+}
+.box
+{
+    width: 60%;
+    min-height: 100px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex; 
+     flex-direction:column;
+}
+.logo
+{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    min-height: 60px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+}
+.logo h2
+{
+    color:white;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 2em;
+}
+.menu
+{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    min-height: 60px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
+}
+.menu ul
+{
+    width: 100%;
+    /* display: flex; */
+    justify-content:space-around;
+    align-items: center;
+}
+.menu ul li
+{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+}
+.menu ul li a
+ {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-family: "Mukta", sans-serif;
+
+  }
+
+.menu ul li:hover
+{
+
+        background-color: orange;
+        color: white;
+        transition: 0.2s all ease-in;
+        transform: translateY(-10px);
+}
+.slider
+{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    min-height: 200px;
+    border: 3px solid #000;
+}
+.main-body-con
+{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid black;
+    margin-top: 10px;
+   justify-content: space-around;
+}
+.main-body-con .sidebar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%;
+    background-color: orange;
+}
+.main-body-con .con 
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 75%;
+    background-color: lightslategray;
+    justify-content: center;
+    align-items:center;
+
+}
+.footer
+{
+    width:100%;
+    min-height: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: royalblue;
+    margin-top: 10px;
+
+}
+@media only screen and (max-width:500px)
+{
+    .box
+    {
+       
+        width: 100%;
+    }
+    .menu
+    {
+        flex-direction: column;
+    }
+    .menu ul 
+    {
+        flex-direction: column;
+        background-color: green;
+        color: white;
+    }
+    .main-body-con
+    {
+        flex-direction: column;
+    }
+    .con
+    {
+        min-height: 300px;
+    }
+    .footer h4 
+    {
+        font-size: 3.5vw;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+        <div class="logo">
+            <h2>Company Name</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Our Clients</a></li>
+                <li><a href="#">Our profits</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="ism-slider" data-transition_type="fade" id="my-slider">
+                <ol>
+                  <li>
+                    <img src="F:\html\ism\image\slides\beautiful-701678_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/beautiful-701678_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                  <li>
+                    <img src="ism/image/slides/summer-192179_1280.jpg">
+                    <!-- <div class="ism-caption ism-caption-0">My slide caption text</div> -->
+                  </li>
+                </ol>
+        </div>
+        <div class="main-body-con">
+            <div class="sidebar">
+                Sidebar
+            </div>
+            <div class="con">
+                Content
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h4>This website maintain by Abc company &copy;2024</h4>
+        </div>
+    </div>
+</body>
+</html>

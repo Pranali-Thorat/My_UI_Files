@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *
+        {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            display:flex;
+            flex-direction: column;
+        }
+        .wrapper
+        {
+            width:60%;
+            display: flex;
+            flex-direction: column; 
+            min-height: 700px;
+            /* border:1px solid black; */
+            margin: auto;
+        }
+        .main-menu-logo
+        {
+            display: flex;
+            width: 100%;
+            min-height: 60px;
+            justify-content: space-between;
+            flex-direction: row;
+        
+        }
+        .main-menu-logo .logo 
+        {
+            display:flex;
+            flex-direction: row;
+           flex-basis: 40%;
+           background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+           justify-content: center;
+            align-items: center;
+           
+         }
+
+        .logo h2
+        {
+             color: white;
+             padding:15px;
+             font-size: 1.7em;
+         }
+
+        .main-menu-logo .menu 
+        {
+             flex-basis: 55%;
+             display: flex;
+             background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+             padding-top: 10px;
+        }
+        .menu ul
+         {
+            display: flex;
+            
+         }
+        .menu ul li
+        {
+            padding: 10px;
+            list-style-type:none;
+        }
+        .menu ul li a
+        {
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+     
+         }
+         .menu ul li :hover
+         {
+            background-color:orange;
+           
+         }
+         .slider
+         {
+            width: 100%;
+            min-height: 300px;
+            /* border: 1px solid black; */
+            margin-top: 10px;
+            
+         }
+         .slider img
+         {
+            width: 100%;
+            height: 100%;
+        }
+         .box
+         {
+             width: 100%;
+             min-height: 400px;
+             margin-top:10px;
+            display: flex;
+            justify-content: space-between;
+             /* border:1px solid black; */
+              /* flex-direction: row; */
+         }
+          .cards
+         {
+            
+            display :flex;
+            flex-basis: 32%;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            min-height: 450px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;     
+         }
+         .cards .img
+        {
+            display: flex;
+            width: 100%;
+            height: 190px;
+            background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+            border-radius: 20px;
+        }
+
+        .img img
+         {
+            width: 80%;
+            height:80%;
+           margin:20px;
+            margin-left: 20px;
+            border-radius: 60px;
+            object-fit: cover;
+        }
+
+         .cards h2
+         {
+               padding:15px;
+              text-align: center;       
+         }
+         .cards p
+         {
+             display: flex;
+             padding: 10px;
+             text-align: justify;
+             margin-bottom: 20px;
+        }
+          .cards .know-more
+         {
+            /* width: 100%;
+            min-height: 40px;*/
+            margin-top: 20px; 
+            background-color: cornflowerblue;
+            border-radius: 15px;
+            padding: 10px 20px;
+            margin: auto;
+         }
+         .know-more:hover
+         {
+              background-color: orange;
+              color: white;
+         }
+         .cards .social
+         {
+            width: 100%;
+            min-height: 40px;
+            display: flex;
+            background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+            border-radius: 20px;
+            align-items: center;
+            margin-top: 25px;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+        }
+        .social i
+        {
+            color:white;
+            font-size: 1.2em;
+        }
+        .footer
+        {
+              width:100%;
+              min-height: 60px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+             align-items: center;
+             background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+             margin-top: 10px;
+     
+        }
+        .footer h4
+        {
+             
+             font-size: 1.2vw;
+             color: white;
+
+        }
+        
+@media only screen and (max-width:768px) {
+    .main-menu-logo{
+
+        flex-direction: column;
+
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .box
+    {
+        flex-direction: column;
+    }
+
+}
+</style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-menu-logo">
+            <div class="logo">
+                <h2>Company name</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Serives</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider">
+            <img src="F:\html\images\cards-img.jpg" alt="">
+        </div>
+        
+        
+        <div class="box">
+             <div class="cards">
+                <div class="img">
+                    <img src="F:\html\images\profile1.webp" alt="">
+                </div>
+                
+                 <h2>Vikas Jain</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Rem provident saepe, dicta aspernatur deleniti aliquid excepturi modi dolores 
+                    debitis doloremque reiciendis corrupti molestias porro officia, 
+                    labore impedit dolorem! </p>
+                <button class="know-more"><b>Read more</b></button>
+             
+            <div class="social">
+                <i class="fa-brands fa-instagram"></i> 
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>            
+             </div>
+
+
+
+
+            <div class="cards">
+                <div class="img">
+                    <img src="F:\html\images\profile2.jpg" alt="">
+                </div>
+                
+                 <h2>Mrunal Shinde</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Rem provident saepe, dicta aspernatur deleniti aliquid excepturi modi dolores 
+                    debitis doloremque reiciendis corrupti molestias porro officia, 
+                    labore impedit dolorem! </p>
+                <button class="know-more"><b>Read more</b></button>
+           
+            <div class="social">
+                <i class="fa-brands fa-instagram"></i> 
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            </div>
+
+            <div class="cards">
+                <div class="img">
+                    <img src="F:\html\images\profile3.webp" alt="">
+                </div>
+                
+                 <h2>Ramesh Shah</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Rem provident saepe, dicta aspernatur deleniti aliquid excepturi modi dolores 
+                    debitis doloremque reiciendis corrupti molestias porro officia, 
+                    labore impedit dolorem! </p>
+                <button class="know-more"><b>Read more</b></button>
+
+                <div class="social">
+                    <i class="fa-brands fa-instagram"></i> 
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+    </div>
+      <div class="footer">
+                <h4>This website is maintain by ABC Company &copy;2024</h4>
+            </div>
+</div>
+</body>
+</html>
